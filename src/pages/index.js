@@ -8,26 +8,27 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
+    text: "Home",
+    url: "!#",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+       
   },
   {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    text: "Clients",
+    url: "!#",
     description:
       "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
   },
   {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
+    text: "Partners",
+    url: "!#",
     description:
       "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
   },
   {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
+    text: "News",
+    url: "!#",
     description:
       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
   },
@@ -35,36 +36,36 @@ const links = [
 
 const samplePageLinks = [
   {
-    text: "Page 2",
+    text: "Listing",
     url: "page-2",
     badge: false,
     description:
       "A simple example of linking to another page within a Gatsby site",
   },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
+  { text: "Portfolio", url: "using-typescript" },
+  { text: "Price Tracker", url: "using-ssr" },
+  { text: "Cryptocurrencies", url: "using-dsg" },
 ]
 
 const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+  { text: "Join us on Discord", url: "https://discord.gg/3C43QjjDVW" },
   {
     text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
+    url: "!#",
   },
   {
     text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
+    url: "!#",
   },
   {
     text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
+    url: "!#",
   },
   {
     text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
+    url: "!#",
   },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
+  { text: "Issues", url: "!#" },
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
@@ -83,18 +84,16 @@ const IndexPage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Welcome to <b>CryptoSky!</b>
       </h1>
       <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
+        <b>Pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
             {i !== samplePageLinks.length - 1 && <> · </>}
           </React.Fragment>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>
